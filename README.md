@@ -1,4 +1,4 @@
-# test
+# Smart City App
 
 ## Project setup
 ```
