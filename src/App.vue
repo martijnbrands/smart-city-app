@@ -1,7 +1,11 @@
 <template>
+
   <a-scene embedded arjs>
+    <a-assets>
+    <a-asset-item id="windturbine" src="/assets/windturbine.gltf"></a-asset-item>
+  </a-assets>
   	<a-marker preset="hiro">
-            <a-box position='0 0.5 0' material='color: black;'></a-box>
+      <a-entity gltf-model="#windturbine"></a-entity>
   	</a-marker>
   	<a-entity camera></a-entity>
     </a-scene>
