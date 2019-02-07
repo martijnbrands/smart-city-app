@@ -1,13 +1,16 @@
 <template>
-  <HelloWorld />
+  <div>
+    <p>Aframe</p>
+  </div>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
 
-  export default {
-    components: {
-      HelloWorld
-    }
+export default {
+  components: {
   }
+};
 </script>
+
+<style lang="sass">
+</style>
