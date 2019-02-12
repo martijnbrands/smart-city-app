@@ -1,5 +1,4 @@
 <template>
-  <v-container>
     <v-layout>
       <v-flex >
         <v-card class="mb-2" v-for="project in projects" :key="project.id">
@@ -22,7 +21,6 @@
         </v-card>
       </v-flex>
     </v-layout>
-  </v-container>
 </template>
 
 <script>

@@ -1,8 +1,23 @@
 <template>
-    <a-scene vr-mode-ui="enabled: false" arjs='sourceType: webcam; debugUIEnabled: false;'>
-        <a-marker preset="hiro">
-            <a-sphere position="0 0.5 0" radius="1.25" color="#EF2D5E" shadow></a-sphere>
-        </a-marker>
-        <a-entity camera></a-entity>
-    </a-scene>
+    <div class="hello">
+        <Aframe />
+    </div>
 </template>
+
+
+<script>
+import Aframe from "../components/Aframe.vue";
+
+export default {
+  components: {
+    Aframe
+  },
+  data () {
+    return {
+      //
+    }
+  }
+}
+</script>
+
+
