@@ -3,7 +3,7 @@
       <v-btn to="/" color="white" flat value="projecten">
         <span class="mdi mdi-format-list-bulleted"></span>
       </v-btn>
-      <v-btn to="/projecten" color="white" flat value="projecten">
+      <v-btn to="/augmented" color="white" flat value="augmented">
         <span class="mdi mdi-cube-scan"></span>
       </v-btn>
       <v-btn to="/projecten" color="white" flat value="projecten">
