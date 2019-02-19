@@ -1,8 +1,11 @@
 <template>
     <a-scene embedded vr-mode-ui="enabled: false" arjs='sourceType: webcam; debugUIEnabled: false;'>
-        <a-marker preset="hiro">
-                <a-sphere position="0 0.5 0" radius="1.25" color="#EF2D5E" shadow></a-sphere>
+        <!-- define your markers -->
+        <a-marker preset='hiro'>
+        <!-- here define the content to display on top of the marker -->
+            <a-box position='0 0.5 0' material='color: pink;'></a-box>
         </a-marker>
+        <!-- define a simple camera -->
         <a-entity camera></a-entity>
     </a-scene>
 </template>
