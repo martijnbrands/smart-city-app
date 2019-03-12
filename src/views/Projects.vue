@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-toolbar app flat color="white">
+    <v-toolbar app color="white">
           <v-spacer></v-spacer>
           <v-toolbar-title>Spoorzone</v-toolbar-title>
           <v-spacer></v-spacer>

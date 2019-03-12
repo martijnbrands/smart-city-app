@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-toolbar app flat color="white">
+    <v-toolbar app color="white">
         <v-btn icon @click="$router.go(-1)">
             <v-icon>mdi-arrow-left</v-icon>
         </v-btn>
