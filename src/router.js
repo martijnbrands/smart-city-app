@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import VueInstagram from 'vue-instagram'
 import Projects from './views/Projects.vue'
-import Augmented from './views/Augmented.vue'
+import Social from './views/Social.vue'
 
-Vue.use(Router)
+Vue.use(Router);
+Vue.use(VueInstagram);
+
 
 export default new Router({
   mode: 'hash',
@@ -15,9 +18,10 @@ export default new Router({
       component: Projects
     },
     {
-      path: '/augmented',
-      name: 'Augmented',
-      component: Augmented
+      path: '/social',
+      name: 'Social',
+      component: Social
     }
+
   ]
 })

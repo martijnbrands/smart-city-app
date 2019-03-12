@@ -1,5 +1,6 @@
 <template>
-  <v-app style="background-color: rgba(0,0,0,0);">
+  <v-app light style="background-color: white">
+    <Header />
     <v-container>
       <v-content>
           <router-view></router-view>
@@ -10,12 +11,14 @@
 </template>
 
 <script>
+import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 
 export default {
   name: 'App',
   components: {
-    Navigation
+    Navigation,
+    Header
   },
   data () {
     return {

@@ -14,10 +14,14 @@
             </div>
           </v-card-title>
 
-          <!-- <v-card-actions>
-            <v-btn flat color="orange">Share</v-btn>
-            <v-btn flat color="orange">Explore</v-btn>
-          </v-card-actions> -->
+          <v-card-actions>
+           <v-btn icon>
+              <v-icon>mdi-heart-outline</v-icon>
+            </v-btn>
+            <v-btn icon>
+              <v-icon>mdi-comment-text</v-icon>
+            </v-btn>
+          </v-card-actions>
         </v-card>
       </v-flex>
     </v-layout>
