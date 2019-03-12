@@ -5,5 +5,5 @@
         <v-btn icon>
             <v-icon>search</v-icon>
         </v-btn>
-</v-toolbar>
+  </v-toolbar>
 </template>
