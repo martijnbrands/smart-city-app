@@ -1,35 +1,42 @@
 <template>
-  <v-container>
-    <v-layout>
-      <v-flex >
-        <v-card class="mb-2" v-for="project in projects" :key="project.id">
-          <v-img
-            v-bind:src="project.picture"
-            aspect-ratio="2.75"
-          ></v-img>
+  <div>
+    <v-toolbar app flat color="white">
+          <v-spacer></v-spacer>
+          <v-toolbar-title>Spoorzone</v-toolbar-title>
+          <v-spacer></v-spacer>
+    </v-toolbar>
+    <v-container>
+      <v-layout>
+        <v-flex >
+          <v-card class="mb-2" v-for="project in projects" :key="project.id">
+            <v-img
+              v-bind:src="project.picture"
+              aspect-ratio="2.75"
+            ></v-img>
 
-          <v-card-title primary-title>
-            <div>
-              <h3 class="headline mb-0">{{project.title}}</h3>
-              <div>{{project.description}}</div>
-            </div>
-          </v-card-title>
+            <v-card-title primary-title>
+              <div>
+                <h3 class="headline mb-0">{{project.title}}</h3>
+                <div>{{project.description}}</div>
+              </div>
+            </v-card-title>
 
-          <v-card-actions>
-             <v-btn flat
-             :to="{name: 'SingleProject', params: {
-               id: project.id,
-               title: project.title, 
-               description: project.description
-               }
-              }">
-             view Details
-            </v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-flex>
-    </v-layout>
-  </v-container>
+            <v-card-actions>
+              <v-btn flat
+              :to="{name: 'SingleProject', params: {
+                id: project.id,
+                title: project.title, 
+                description: project.description
+                }
+                }">
+              view Details
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </div>
 </template>
 
 <script>
